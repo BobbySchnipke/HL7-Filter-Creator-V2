@@ -34,6 +34,10 @@
             this.fromLabel = new System.Windows.Forms.Label();
             this.locationCheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.createButton = new System.Windows.Forms.Button();
+            this.locationCodeButton = new System.Windows.Forms.Button();
+            this.locationLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // blockLabel
@@ -113,11 +117,45 @@
             this.createButton.UseVisualStyleBackColor = true;
             this.createButton.Click += new System.EventHandler(this.createButton_Click);
             // 
+            // locationCodeButton
+            // 
+            this.locationCodeButton.Location = new System.Drawing.Point(102, 52);
+            this.locationCodeButton.Name = "locationCodeButton";
+            this.locationCodeButton.Size = new System.Drawing.Size(75, 23);
+            this.locationCodeButton.TabIndex = 10;
+            this.locationCodeButton.Text = "Change";
+            this.locationCodeButton.UseVisualStyleBackColor = true;
+            this.locationCodeButton.Click += new System.EventHandler(this.locationCodeButton_Click);
+            // 
+            // locationLabel
+            // 
+            this.locationLabel.AutoSize = true;
+            this.locationLabel.Location = new System.Drawing.Point(118, 26);
+            this.locationLabel.Name = "locationLabel";
+            this.locationLabel.Size = new System.Drawing.Size(0, 13);
+            this.locationLabel.TabIndex = 12;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(14, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Location Code File : ";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // inputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 475);
+            this.Controls.Add(this.locationLabel);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.locationCodeButton);
             this.Controls.Add(this.createButton);
             this.Controls.Add(this.locationCheckedListBox);
             this.Controls.Add(this.fromLabel);
@@ -139,6 +177,10 @@
         private System.Windows.Forms.Label fromLabel;
         private System.Windows.Forms.CheckedListBox locationCheckedListBox;
         private System.Windows.Forms.Button createButton;
+        private System.Windows.Forms.Button locationCodeButton;
+        private System.Windows.Forms.Label locationLabel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

@@ -32,7 +32,7 @@ namespace HL7_Filter_Creator_V2
 
         private void createButton_Click(object sender, EventArgs e)
         {
-
+            
             // call function to see if boxes are checked in the checkedListBoxes
             checkForChecks();
 
@@ -66,7 +66,7 @@ namespace HL7_Filter_Creator_V2
             //display the FilterText form
             FinalFilter.ShowDialog();
 
-            //close the InputForm when GamePlayForm is exited so the entire program is terminated
+            //close the InputForm when Form 1 is exited so the entire program is terminated
             this.Close();
 
         }
@@ -413,5 +413,13 @@ namespace HL7_Filter_Creator_V2
             }
         }
 
+        private void locationCodeButton_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "CSV files (*.csv)|*.csv";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                this.locationLabel.Text = openFileDialog1.FileName;
+            }
+        }
     }
 }
